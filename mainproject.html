@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SK Holidays & Travels</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- CSS link -->
+  <link rel="stylesheet" href="mainproject.css" />
+  <!-- icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="#">SK Holidays</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
+      <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="mainproject.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero d-flex align-items-center justify-content-center text-center text-white">
+    <div data-aos="fade-down" data-aos-duration="1000">
+      <h1>Discover Your Next Escape</h1>
+      <p class="lead">Search, Explore, and Book in Minutes</p>
+      <input type="text" id="searchInput" class="form-control search-input mx-auto"
+        placeholder="Search destinations..." />
+    </div>
+  </header>
+
+  <!-- Destinations -->
+  <section id="destinations" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Popular Destinations</h2>
+      <div class="row" id="cardContainer">
+        <!-- Bali -->
+        <div class="col-md-4 mb-4 destination-card" data-name="Bali" data-aos="fade-up">
+          <div class="card h-100 shadow-sm">
+            <a href="bali.html"> <img style="height: 220px;" src="bali.jpg" class="card-img-top" alt="Bali"></a>
+            <div class="card-body">
+              <h5 class="card-title">Bali, Indonesia</h5>
+              <p class="card-text">Tropical paradise with rice terraces, temples, and sunsets.</p>
+              <button class="btn btn-primary btn-block book-btn" data-dest="Bali">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paris -->
+        <div class="col-md-4 mb-4 destination-card" data-name="Paris" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm">
+            <a href="paris.html"><img style="height: 220px;" src="paris.jpg" class="card-img-top" alt="Paris"></a>
+            <div class="card-body">
+              <h5 class="card-title">Paris, France</h5>
+              <p class="card-text"> The city of love, lights, and world-class cuisine. </p>
+              <button class="btn btn-primary btn-block book-btn" data-dest="Paris">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!--  Tokyo -->
+        <div class="col-md-4 mb-4 destination-card" data-name="Tokyo" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <a href="tokyo.html"> <img style="height:220px ;" src="tokyo.jpg" class="card-img-top" alt="Tokyo"></a>
+            <div class="card-body">
+              <h5 class="card-title">Tokyo, Japan</h5>
+              <p class="card-text">A dazzling fusion of tradition and futuristic neon.</p>
+              <button class="btn btn-primary btn-block book-btn" data-dest="Tokyo">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!--  New York -->
+        <div class="col-md-4 mb-4 destination-card" data-name="New York" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <a href="Newyork.html"> <img style="height: 220px;" src="Newyork.jpg" class="card-img-top"
+                alt="New York"></a>
+            <div class="card-body">
+              <h5 class="card-title">New York, USA</h5>
+              <p class="card-text">A dazzling fusion of tradition and futuristic neon.</p>
+              <button class="btn btn-primary btn-block book-btn" data-dest="New York">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!--  Capetown -->
+        <div class="col-md-4 mb-4 destination-card" data-name="capetown" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <a href="capetown.html"> <img style="height: 220px;" src="Cape-Town1.webp" class="card-img-top"
+                alt="capetown"></a>
+            <div class="card-body">
+              <h5 class="card-title">Cape Town, South Africa</h5>
+              <p class="card-text"> A modern, cosmopolitan city surrounded by nature </p>
+              <button class="btn btn-primary btn-block book-btn" data-dest="capetown">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- barcelona -->
+        <div class="col-md-4 mb-4 destination-card" data-name="barcelona" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <a href="barcelona.html"><img style="height: 220px;" src="barcelona.jpg" class="card-img-top"
+                alt="New York"></a>
+            <div class="card-body">
+              <h5 class="card-title">Barcelona, Spain</h5>
+              <p class="card-text"> An admirable city, a city full of life, intense, a port open to the past and future.
+              </p>
+              <button class="btn btn-primary btn-block book-btn" data-dest="barcelona">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- london -->
+        <div class="col-md-4 mb-4 destination-card" data-name="london" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <a href="london.html"><img style="height: 220px;" src="london.webp" class="card-img-top" alt="London"></a>
+            <div class="card-body">
+              <h5 class="card-title">London, England</h5>
+              <p class="card-text"> A vibrant, cosmopolitan city with a rich history and a thriving modern culture</p>
+              <button class="btn btn-primary btn-block book-btn" data-dest="London">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- dubai -->
+        <div class="col-md-4 mb-4 destination-card" data-name="dubai" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <a href="dubai.html"> <img style="height: 220px;" src="dubai.webp" class="card-img-top" alt="New York"></a>
+            <div class="card-body">
+              <h5 class="card-title">Dubai, UAE</h5>
+              <p class="card-text">
+                A city with ultra modern architecture of skyscrapers and vibrant nightlife</p>
+              <button class="btn btn-primary btn-block book-btn" data-dest="dubai">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- rome -->
+
+        <div class="col-md-4 mb-4 destination-card" data-name="rome" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <a href="rome.html"> <img style="height: 220px;" src="rome.webp" class="card-img-top" alt="rome"></a>
+            <div class="card-body">
+              <h5 class="card-title">Rome, Italy</h5>
+              <p class="card-text">A City of Seven Hills, that surrounded by nature.</p>
+              <button class="btn btn-primary btn-block book-btn" data-dest="Rome">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sydney -->
+        <div class="col-md-4 mb-4 destination-card" data-name="Sydney" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <a href="Sydney.html"><img style="width: 600px; height: 220px;" src="sydney.jpg" class="card-img-top"
+                alt="sydney"></a>
+            <div class="card-body">
+              <h5 class="card-title">Sydney, Australia</h5>
+              <p class="card-text"> A city of outdoor lifestyle and vibrant harbor activities.</p>
+              <button class="btn btn-primary btn-block book-btn" data-dest="sydney">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interlaken -->
+        <div class="col-md-4 mb-4 destination-card" data-name="Interlaken" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <a href="Interlaken.html"><img style="height: 220px;" src="Interlaken-.webp" class="card-img-top"
+                alt="Interlaken"></a>
+            <div class="card-body">
+              <h5 class="card-title">Interlaken, Switzerland</h5>
+              <p class="card-text">A narrow stretch of valley, between the emerald-colored waters </p>
+              <button class="btn btn-primary btn-block book-btn" data-dest="Interlaken">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Malaysia -->
+        <div class="col-md-4 mb-4 destination-card" data-name="malaysia" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <a href="kaulalampur.html"> <img style="height: 220px;" src="kuala lampur.jpg" class="card-img-top"
+                alt="kuala lampur"></a>
+            <div class="card-body">
+              <h5 class="card-title">Kuala Lampur, Malaysia</h5>
+              <p class="card-text">An country with vibrant cities, lush rainforests, and diverse wildlife.</p>
+              <button class="btn btn-primary btn-block book-btn" data-dest="kuala lampur">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+    <footer>
+    <div class="dk">
+      <footer id="contact" class="bg-dark text-white text-center py-4">
+        <p>© 2025 SK Holidays & Travels. All rights reserved.</p>
+        <a style="text-decoration: none; color: white;" href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram fa-lg" style="color:white; margin-left:-130px;"></i><p style="margin-left: 70px; margin-top: -25px;" id="Sree">SK Holidays & Travels</a></p>
+          <a style="text-decoration: none; color: white;" href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dmail%26oq%3Dmail%26gs_lcrp%3DEgZjaHJvbWUyDggAEEUYORhDGIAEGIoFMgcIARAAGIAEMg8IAhAAGAoYgwEYsQMYgAQyBwgDEAAYgAQyDQgEEC4YxwEY0QMYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgATSAQkyODQ2MWowajSoAgCwAgA%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAlAAQ&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S1007933270%3A1753764619655753"><i class="fa-regular fa-envelope fa-lg" style="color:white; margin-left: -130px;"></i><p style="margin-left: 75px; margin-top: -25px;" id="Sree1">skholidays@gmail.com</a></p>
+          <a style="text-decoration: none; color:white;" href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-lg" style="color: white; margin-left: -130px;"></i><p style="margin-top: -25px;" id="Sree2">1234567890</a></p>
+          <!-- <a --><i class="fa-solid fa-phone fa-lg" style="color:white; margin-left: -130px;"></i><p style="margin-left: 20px; margin-top: -25px;" id="Sree3">+91 1234567890</a></p>
+     </div>
+         
+     </div>
+      
+    </div>
+</footer>
+
+
+  <!-- Booking Model -->
+  <div class="modal fade" id="bookingModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <form id="bookingForm">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">Confirm Your Booking</h5>
+            <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label>Destination</label>
+              <input type="text" id="destInput" class="form-control" read only>
+            </div>
+
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" id="nameInput" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="emailInput" class="form-control" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label>Travel Date</label>
+              <input type="date" id="dateInput" class="form-control" required>
+            </div>
+
+
+
+
+            <div class="form-group">
+              <label>People</label>
+              <input type="number" id="peopleInput" class="form-control" min="1" value="1" required>
+            </div>
+
+            <div class="modal-footer justify-content-center">
+              <button type="submit" class="btn btn-success"> Confirm Booking</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+    <!-- jQuery,  Bootstrap JS, AOS, Custom JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="mainproject.js"></script>
+</body>
+
+</html>

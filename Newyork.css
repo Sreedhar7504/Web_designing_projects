@@ -1,0 +1,103 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fb;
+  color: #333;
+}
+
+/* Navbar Offset */
+body {
+  padding-top: 56px;
+}
+
+/* Hero Banner */
+.city-hero {
+  position: relative;
+  height: 60vh;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.city-hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+.city-hero h1,
+.city-hero p {
+  position: relative;
+  z-index: 2;
+}
+
+/* Sections */
+.section {
+  position: relative;
+}
+.section-overview .row {
+  align-items: center;
+}
+.section h2 {
+  margin-bottom: 1rem;
+}
+
+/* Gallery */
+.carousel-inner img {
+  object-fit: cover;
+  height: 500px;
+}
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 300px;
+  }
+}
+
+/* Cards & Blockquotes */
+.card-title {
+  font-weight: 600;
+}
+blockquote {
+  font-style: italic;
+}
+
+/* Booking Button (Navbar) */
+#bookNowBtn {
+  transition: background 0.3s;
+}
+#bookNowBtn:hover {
+  background: #0069d9;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+/* Responsive Overrides */
+@media (max-width: 992px) {
+  .city-hero {
+    height: 50vh;
+  }
+  .city-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .city-hero {
+    height: 40vh;
+  }
+  .city-hero h1 {
+    font-size: 1.8rem;
+  }
+  .city-hero p {
+    font-size: 1rem;
+  }
+}

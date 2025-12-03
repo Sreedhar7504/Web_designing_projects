@@ -1,0 +1,78 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:rgb(6, 228, 240);
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero {
+  height: 70vh;
+  background: url('https://source.unsplash.com/1600x900/?travel,landscape')
+    center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.search-input {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-size: 1rem;
+}
+
+/* Destination Cards */
+.destination-card .card {
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10%;
+}
+.destination-card .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Modal Customization */
+.modal-header {
+  border-bottom: none;
+}
+.modal-header .close {
+  font-size: 1.5rem;
+}
+
+/* Footer */
+#a {
+  font-size: 0.9rem;
+  padding: 20px;
+  text-align: center;
+  background-color: blueviolet;
+}
+
+.dk{
+  width: 100%;
+  background-color:black;
+  
+}
+

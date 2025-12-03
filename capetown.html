@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cape Town, South Africa</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- AOS Animation CSS -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="capetown.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="mainproject.html">SK Holidays</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+        <li class="nav-item"><a class="nav-link" href="#highlights">Highlights</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link btn btn-primary text-white ml-lg-3" href="#" id="bookNowBtn">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <header class="city-hero d-flex align-items-center text-center" id="overview">
+    <div class="overlay"></div>
+    <div class="container text-white" data-aos="fade-down">
+      <h1 class="display-4">Cape Town, South Africa</h1>
+      <p class="lead">A modern, cosmopolitan city surrounded by nature. </p>
+    </div>
+  </header>
+
+  <!-- Overview Section -->
+  <section class="section section-overview py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <img src="capetown.jpeg" class="img-fluid rounded shadow" alt="Capetown" />
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h2>Why Visit Cape Town?</h2>
+          <p>
+           Cape Town for its diverse natural landscapes, including iconic Table Mountain and pristine beaches like Boulders Beach, as well as its rich history and culture, 
+           exemplified by Robben Island and the Bo-Kaap district. 
+          </p>
+          <ul class="list-unstyled">
+            <li>• Table Mountain</li>
+            <li>• Victoria & Alfred Waterfront (V&A Waterfront)</li>
+            <li>• Boulders Beach</li>
+            <li>• Robben Island Museum</li>
+            <li>• Cape Point Nature Reserve</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section id="highlights" class="section py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">Top Highlights</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="zoom-in">
+          <div class="card h-100 shadow-sm">
+            <img src="v-and-a-waterfront.jpg" style="height: 250px;" class="card-img-top" alt="Nusa Islands" />
+            <div class="card-body">
+              <h5 class="card-title"> Victoria & Alfred Waterfront (V&A Waterfront)</h5>
+              <p class="card-text">It's a lively hub for locals and tourists, offering great food, shopping, and access to attractions like the Two Oceans Aquarium.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card h-100 shadow-sm">
+            <img src="robben island.png" style="height: 250px;" class="card-img-top" alt="Uluwatu" />
+            <div class="card-body">
+              <h5 class="card-title">Robben Island Museum</h5>
+              <p class="card-text">Offers a poignant glimpse into South Africa's past and the struggle against apartheid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <img src="cape-point-nature-reserve.jpg" style="height: 250px;" class="card-img-top" alt="Ubud"/>
+            <div class="card-body">
+              <h5 class="card-title">Cape Point Nature Reserve/h5>
+              <p class="card-text">Explore diverse flora and fauna, dramatic cliffs, and incredible ocean vistas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section id="gallery" class="section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">Photo Gallery</h2>
+      <div id="photoCarousel" class="carousel slide" data-ride="carousel" data-aos="fade-up">
+        <ol class="carousel-indicators">
+          <li data-target="#photoCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#photoCarousel" data-slide-to="1"></li>
+          <li data-target="#photoCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <img src="capetown1.avif" class="d-block w-100"alt="bali"/>
+          </div>
+          <div class="carousel-item">
+            <img src="capetown2.jpg" class="d-block w-100" alt="bali" />
+          </div>
+          <div class="carousel-item">
+            <img  src="capetown3.webp"  class="d-block w-100"  alt="bali" />
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#photoCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="section py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">Traveler Reviews</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4" data-aos="fade-right">
+          <blockquote class="blockquote shadow-sm p-4 rounded bg-white">
+            <p class="mb-2">“Unforgettable—capetown has my heart forever!”</p>
+            <footer class="blockquote-footer">Emma L., USA</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-delay="100">
+          <blockquote class="blockquote shadow-sm p-4 rounded bg-white">
+            <p class="mb-2">“Every corner feels like a postcard. Highly recommend!”</p>
+            <footer class="blockquote-footer">Carlos M., Spain</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Modal -->
+  <div class="modal fade" id="bookingModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <form id="bookingForm">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">Book Your Newyork Trip</h5>
+            <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <input type="hidden" id="cityName" value="Cape Town, South Africa" />
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" id="userName" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="userEmail" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label>Travel Date</label>
+              <input type="date" id="travelDate" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label>People</label>
+              <input type="number" id="peopleCount" class="form-control" min="1" value="1" required />
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="submit" class="btn btn-success">Confirm Booking</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    © 2025 SK Holidays. All rights reserved.
+  </footer>
+
+  <!-- jQuery, Popper, Bootstrap JS, AOS, Custom JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="capetown.js"></script>
+</body>
+</html>
